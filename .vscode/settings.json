@@ -1,0 +1,7 @@
+{
+    "terminal.explorerKind": "integrated",
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.enableFileLinks": "on",
+    "terminal.integrated.confirmOnKill": "panel"
+}
