@@ -63,21 +63,50 @@ numbers = {
     8:'осем',
     9:'девет'
 } 
-# if 3 in numbers:
-#     print('три')
-# elif 0 in numbers:
-#     print('нула')
-# elif 1 in numbers:
-#     print('едно')
+if numbers == 0:
+    print('нула')
+elif numbers == 1:
+    print('едно')
+elif numbers == 2:
+    print('две')
+else:
+    print('Грешка: Невалидна цифра')
+
+# # Не мисля, че е правилно решена задачата:(
+
+# if (0-9) in numbers:
+#     print(numbers)
 # else:
 #     print('Грешка: Невалидна цифра')
 
 # Не мисля, че е правилно решена задачата:(
 
-if (0-9) in numbers:
-    print(numbers)
-else:
-    print('Грешка: Невалидна цифра')
+# if (0-9) in numbers:
+#     print(numbers(0-9))
+# else:
+#     print('Грешка: Невалидна цифра')
+
+
+# Задача 5. Напишете програма, която при въвеждане на коефициентите (a, b и c) на квадратно
+# уравнение ax^2+bx+c изчислява и извежда неговите реални корени.
+
+# a = 12
+# b = 21
+# c = 3
+# discriminant = b**2 - 4*a*c
+
+
+# if discriminant > 0:
+#     x1 = (-b + Мath.sqrt(discriminant)) / (2*a)
+#     x2 = (-b - Мath.sqrt(discriminant)) / (2*a)
+#     print("The roots of the equation are x1 = {:.2f} and x2 = {:.2f}".format(x1, x2))
+# elif discriminant == 0:
+#     x = -b / (2*a)
+#     print("The equation has only one root x = {:.2f}".format(x))
+# else:
+#     print("The equation has no real roots.")
+
+
 
 
 
