@@ -51,24 +51,28 @@
 # Задача 4. Напишете програма, която за дадена цифра (0-9), зададена като вход, извежда името
 # на цифрата на български език.
 
-numbers = {
-    0:'нула',
-    1:'едно',
-    2:'две',
-    3:'три',
-    4:'четери',
-    5:'пет',
-    6:'шест',
-    7:'седем',
-    8:'осем',
-    9:'девет'
-} 
+numbers = int(input("Type a number from 0 to 9"))
+    
 if numbers == 0:
     print('нула')
 elif numbers == 1:
     print('едно')
 elif numbers == 2:
     print('две')
+elif numbers == 3:
+    print("три")
+elif numbers == 4:
+    print("четири")
+elif numbers == 5:
+    print("пет")
+elif numbers == 6:
+    print('шест')
+elif numbers == 7:
+    print("седем")
+elif numbers == 8:
+    print('осем')
+elif  numbers == 9:
+    print('девет') 
 else:
     print('Грешка: Невалидна цифра')
 
