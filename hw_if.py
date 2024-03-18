@@ -80,12 +80,15 @@
 # else:
 #     print('Грешка: Невалидна цифра')
 
-# # Не мисля, че е правилно решена задачата:(
+
 
 # if (0-9) in numbers:
 #     print(numbers)
 # else:
 #     print('Грешка: Невалидна цифра')
+
+# # I don't think the task is solved correctly:(
+
 
 
 # ===================================== Задача 5. =======================
@@ -116,6 +119,25 @@
 # - Ако са дадени числата {-2, -1, 1}, сумата на -1 и 1 е 0.
 # - Ако са дадени числата {3, 1, -7}, няма подмножества със сума 0. 
 
+# from itertools import combinations
+
+# def find_zero_sum_subsets(numbers):
+#     zero_sum_subsets = []
+#     for int in range(1, len(numbers)+1):
+#         for subset in combinations(numbers, int):
+#             if sum(subset) == 0:
+#                 zero_sum_subsets.append(list(subset))
+#     return zero_sum_subsets
+
+# numbers = {-2, -1, 1}
+# zero_sum_subsets = find_zero_sum_subsets(numbers)
+# if zero_sum_subsets:
+#     for subset in zero_sum_subsets:
+#         print(subset)
+# else:
+#     print("There are no zero sum subsets")
+
+
 # =================================Задача 7. =========================== 
 # Напишете програма, която прилага бонус точки към дадени точки в интервала [1..9] 
 # чрез прилагане на следните правила: 
@@ -137,6 +159,57 @@
 
 # print(f'Bonus points:{bonus_points}')
 
+
+# ================================== Задача 8. ============================
+# Напишете програма, която преобразува дадено число в интервала [0..999] в текст, 
+# съответстващ на българското произношение. Примери:
+# -0 -> “Нула”
+# -273 -> ”Двеста седемдесет и три”
+# -400 -> ”Четиристотин”
+# -501 -> “Петстотин и едно”
+# -711 -> “Седемстотин и единадесет”
+
+# def number_to_words(num):
+#     units = ['', 'едно', 'две', 'три', 'четири', 'пет', 'шест', 'седем', 'осем', 'девет']
+#     teens = ['десет', 'единадесет', 'дванадесет', 'тринадесет', 'четиринадесет', 'петнадесет', 'шестнадесет', 'седемнадесет', 'осемнадесет', 'деветнадесет']
+#     tens = ['', 'десет', 'двадесет', 'тридесет', 'четиридесет', 'петдесет', 'шестдесет', 'седемдесет', 'осемдесет', 'деветдесет']
+#     hundreds = ['', 'сто', 'двеста', 'триста', 'четиристотин', 'петстотин', 'шестстотин', 'седемстотин', 'осемстотин', 'деветстотин']
+
+#     if num == 0:
+#         return 'Нула'
+
+#     # variables for each of the positions in the number
+#     num_str = str(num)
+#     num_len = len(num_str)
+#     num = int(num_str)
+
+#     # variable for the text
+
+#     words = ''
+
+#     # counting the hundreds
+
+#     if num_len >= 3:
+#         words += hundreds[num // 100] + ' '
+#         num %= 100
+
+#     # calculating the tens and units
+        
+#     if num < 10:
+#         words += units[num]
+#     elif num < 20:
+#         words += teens[num - 10]
+#     else:
+#         words += tens[num // 10] + ' и ' + units[num % 10]
+
+#     return words.strip()
+
+
+# # check with example
+
+# numbers = [0, 273, 400, 501, 711]
+# for num in numbers:
+#     print(f"{num} -> \"{number_to_words(num)}\"")
 
 
 
