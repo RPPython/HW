@@ -179,6 +179,7 @@
 #         return 'Нула'
 
 #     # variables for each of the positions in the number
+
 #     num_str = str(num)
 #     num_len = len(num_str)
 #     num = int(num_str)
@@ -211,10 +212,174 @@
 # for num in numbers:
 #     print(f"{num} -> \"{number_to_words(num)}\"")
 
+# =========================== Task 9 ========================
+# Да се напише програма, която да превръща температура от целзий в фаренхайт. 
+# Формулата е следната: c/5 = f – 32/9, където c е температурата в целзий и f температурата в
+# фаренхайт. 
+# Примерен изход:
+# 60°C is 140 in Fahrenheit 
+# 45°F is 7 in Celsius
+
+# def celsius_to_fahrenheit(celsius):
+#     fahrenheit = (celsius * 9/5) + 32
+#     return fahrenheit
+
+# def fahrenheit_to_celsius(fahrenheit):
+#     celsius = (fahrenheit - 32) * 5/9
+#     return celsius
+
+# temperature = float(input("Enter the temperature: "))
+# unit = input("Enter the unit (C for Celsius, F for Fahrenheit): ")
+
+# if unit.upper() == 'C':
+#     new_temp = celsius_to_fahrenheit(temperature)
+#     print(f"{temperature}°C is {new_temp} in Fahrenheit")
+# elif unit.upper() == 'F':
+#     new_temp = fahrenheit_to_celsius(temperature)
+#     print(f"{temperature}°F is {new_temp} in Celsius")
+# else:
+#     print("Invalid unit. Please enter C or F.")
 
 
-
-
-
-
+# # Exampel
     
+# celsius = 60
+# fahrenheit = celsius_to_fahrenheit(celsius)
+# print(f"{celsius}C is {fahrenheit} in Fahrenheit")
+
+# fahrenheit = 45
+# celsius = fahrenheit_to_celsius(fahrenheit)
+# print(f"{fahrenheit}F is {celsius} in Celsius")
+
+# output:
+
+# 60°C is 140.0 in Fahrenheit
+# 45°F is 7.222222222222222 in Celsius
+
+# =========================== Task 10 ========================
+
+# Напишете програма, която да изчислява възрастта на дадено куче в кучешки години
+# Забележка: За първите две години, една кучешка година е равна на 10.5 човешки. 
+# След това всяка следваща кучешка година се равнява на 4-ри човешки години. 
+
+# def dog_age_converter(age):
+#     if age <= 2:
+#         dog_years = age * 10.5
+#     else:
+#         dog_years = 21 + (age - 2)*4
+#     return dog_years
+
+# age = int(input("Enter the age of the dog: "))
+# dog_years = dog_age_converter(age)
+# print(f"The age of the dog in dog years is: {dog_years}")
+
+# =========================== Task 11 ========================
+
+# num1 = float(input("Enter first number: "))
+# num2 = float(input("Enter second number: "))
+# num3 = float(input("Enter third number: "))
+
+# if num1 >= num2:
+#     if num1 <= num3:
+#         median = num1
+#     elif num2 >= num3:
+#         median = num2
+#     else:
+#         median = num3
+# else:
+#     if num1 >= num3:
+#         median = num1
+#     elif num2 <= num3:
+#         median = num2
+#     else:
+#         median = num3
+
+# print("The median is: ", median)
+
+# =========================== Task 12 ========================
+
+# Напишете програма, която да използва следните променливи, възраст – age, пол
+# (M или F), семейно положение (Y или N) за даден служител. Според следните правила, 
+# програмата да определя, къде може да работи конкретният служител.
+# Правила:
+# - Ако служителката е жена, тя може да работи само в градски райони.
+# - Ако служителят е мъж на възраст между 20 до 40 години, той може да работи навсякъде
+# - Ако служителят е мъж на възраст между 40 и 60 години, той ще работи само в градските
+# райони
+# За всяка друга възраст трябва да се отпечатва грешка
+
+# def determine_workplace(age, gender, marital_status):
+#     if gender == 'F':
+#         print("The employee can only work in urban areas.")
+#     elif gender == 'M':
+#         if age >= 20 and age <= 40:
+#             print("The employee can work anywhere.")
+#         elif age > 40 and age <= 60:
+#             print("The employee will work in urban areas only.")
+#         else:
+#             print("Error: Invalid age range for male employee.")
+#     else:
+#         print("Error: Invalid gender.")
+
+# # Example usage
+# age = int(input("Enter the age of the employee: "))
+# gender = input("Enter the gender of the employee (M or F): ").upper()
+# marital_status = input("Is the employee married? (Y or N): ").upper()
+
+# determine_workplace(age, gender, marital_status)
+
+# =========================== Task 13 ========================
+# Да се напише програма, която при дадено четири цифрено число го обръща
+# отдясно наляво.
+# Пример:
+# Вход: 1234 Вход: 5982
+# Изход: 4321 Изход: 2895
+
+# def flip_number(number):
+#     if number < 1000 or number > 9999:
+#         print("Error: Input must be a four-digit number.")
+#     else:
+#         # Extract digits
+
+#         thousands = number // 1000
+#         hundreds = (number % 1000) // 100
+#         tens = (number % 100) // 10
+#         ones = number % 10
+        
+#         # Reconstruct the number with digits flipped
+
+#         flipped_number = ones * 1000 + tens * 100 + hundreds * 10 + thousands
+#         return flipped_number
+
+# # Example
+# number1 = 1234
+# number2 = 5982
+
+# flipped_number1 = flip_number(number1)
+# flipped_number2 = flip_number(number2)
+
+# print(f"Input: {number1} Output: {flipped_number1}")
+# print(f"Input: {number2} Output: {flipped_number2}")
+
+# =========================== Task 14 ======================== 
+# Сортирайте 3 реални числа в намаляващ ред. Използвайте вложени if оператори. 
+
+# num1 = float(input("Enter first number: "))
+# num2 = float(input("Enter second number: "))
+# num3 = float(input("Enter third number: "))
+
+# if num1 >= num2 and num1 >= num3:
+#     if num2 >= num3:
+#         print(num1, num2, num3)
+#     else:
+#         print(num1, num3, num2)
+# elif num2 >= num1 and num2 >= num3:
+#     if num1 >= num3:
+#         print(num2, num1, num3)
+#     else:
+#         print(num2, num3, num1)
+# else:
+#     if num1 >= num2:
+#         print(num3, num1, num2)
+#     else:
+#         print(num3, num2, num1)     
