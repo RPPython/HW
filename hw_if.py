@@ -412,7 +412,7 @@
 
 ## Example1
 
-# budget = int(input('Available amount:'))
+# budget = float(input('Available amount:'))
 # category = input('Enter category:')
 # group_size = int(input('Number of people in the grup:'))
 
