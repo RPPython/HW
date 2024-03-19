@@ -321,7 +321,7 @@
 #     else:
 #         print("Error: Invalid gender.")
 
-# # Example usage
+# # # Example usage
 # age = int(input("Enter the age of the employee: "))
 # gender = input("Enter the gender of the employee (M or F): ").upper()
 # marital_status = input("Is the employee married? (Y or N): ").upper()
@@ -383,3 +383,102 @@
 #         print(num3, num1, num2)
 #     else:
 #         print(num3, num2, num1)     
+
+# =========================== Task 15 ======================== 
+# A group of enthusiasts decided to buy tickets for Euro 2016. The price of
+# the ticket is determined according to two categories:
+# VIP – BGN 499.99
+# Normal – BGN 249.99                                                                                                                                        
+# Enthusiasts have a certain budget, and the number of people in the group determines what it is
+# percentage of the budget should be allocated to transport:
+# From 1 to 4 – 75% of the budget
+# From 5 to 9 – 60% of the budget
+# From 10 to 24 – 50% of the budget
+# From 25 to 49 – 40% of the budget
+# 50 or more – 25% of the budget
+# to buy tickets for the selected category, as well as how much money they have left or will have
+# they need.                                                                                                                                                           Input data
+# The input is read from the console and contains exactly 3 lines:
+# On the first line is the budget – a real number in the interval [1 000.00 … 1 000 000.00.
+# On the second line is the category - "VIP" or "Normal".
+# On the third line is the number of people in the group - an integer in the interval [1 … 200].
+# Output data
+# To print one line to the console:
+# If the budget is sufficient:
+# "Yes! You have {N} left." – where N is the remaining money of the group.
+# If the budget IS NOT sufficient:
+# "Not enough money! You need {M} leva." – where M is the shortfall amount.
+# Amounts must be formatted to two decimal places
+
+## Example1
+
+# budget = int(input('Available amount:'))
+# category = input('Enter category:')
+# group_size = int(input('Number of people in the grup:'))
+
+# ticket_price_vip = 499.99
+# ticket_price_normal = 249.99
+
+# if category == "VIP":
+#     ticket_price = ticket_price_vip
+# else:
+#     ticket_price = ticket_price_normal
+
+# if 1 <= group_size <= 4:
+#     transport_percentage = 0.75
+# elif 5 <= group_size <= 9:
+#     transport_percentage = 0.60
+# elif 10 <= group_size <= 24:
+#     transport_percentage = 0.50
+# elif 25 <= group_size <= 49:
+#     transport_percentage = 0.40
+# else:
+#     transport_percentage = 0.25
+
+# total_ticket_cost = ticket_price * group_size
+# transport_cost = transport_percentage * budget
+
+# if budget >= total_ticket_cost + transport_cost:
+#     remaining_money = budget - (total_ticket_cost + transport_cost)
+#     print("Yes! You have {:.2f} left.".format(remaining_money))
+# else:
+#     shortfall_amount = total_ticket_cost + transport_cost - budget
+#     print("Not enough money! You need {:.2f} leva.".format(shortfall_amount))
+
+## Example2
+    
+# budget = float(input('Availble amount:'))
+# category = input('Enter category:')
+# people = int(input('Number of people in the grup:'))
+
+# total_cost = 0
+
+# if category == "VIP":
+#     ticket_price = 499.99
+#     total_cost = people * ticket_price
+# else:
+#     ticket_price = 249.99
+#     total_cost = people * ticket_price
+
+# if people <= 4:
+#     transport_percent = 0.75
+# elif 5 <= people <= 9:
+#     transport_percent = 0.6
+# elif 10 <= people <= 24:
+#     transport_percent = 0.5
+# elif 25 <= people <= 49:
+#     transport_percent = 0.4
+# else:
+#     transport_percent = 0.25
+
+# total_cost += transport_percent * budget
+
+# if budget >= total_cost:
+#     money_left = budget - total_cost
+#     print(f"Yes! You have {money_left:.2f} leva left.")
+# else:
+#     money_needed = total_cost - budget
+#     print(f"Not enough money! You need {money_needed:.2f} leva.")
+
+# =========================== Task 16 ======================== 
+# 
