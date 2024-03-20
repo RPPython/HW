@@ -481,4 +481,61 @@
 #     print(f"Not enough money! You need {money_needed:.2f} leva.")
 
 # =========================== Task 16 ======================== 
-# 
+# Write a program that reads two integers (N1 and N2) and an operator to
+# and carry out mathematics and c o p e r a t i o n with them Operation is possible
+# are: addition (+), subtraction (-), multiplication (*), division (/) and modular division (%). At
+# addition, subtraction and multiplication on the console should print the result and whether it
+# is even or odd. In simple division - only the result, and in modular division
+# – the rest. It should be noted that the divisor may be equal to zero (= 0), but not zero
+# is shared. In this case, a special message should be printed.                                                           Input data
+# 3 lines are read from the console:
+# • N1 – an integer in the range [0 … 40,000].
+# • N2 – an integer in the range [0 … 40,000].
+# • Operator – one symbol among: "+", "-", "*", "/", "%".
+# Output data
+# To print one line to the console:
+# • If the operation is addition, subtraction or multiplication:
+# ◦ "{N1} {operator} {N2} = {result} – {even/odd}".
+# • If the operation is division:
+# ◦ "{N1} / {N2} = {result}" – the result is formatted to the second character after
+# the decimal point.
+# • If the operation is modular division:
+# ◦ "{N1} % {N2} = {remainder}".
+# • In case of division by 0 (zero):
+# ◦ "Cannot divide {N1} by zero".
+
+# N1 = int(input('An integer in the range [0 … 40,000]:'))
+# N2 = int(input('An integer in the range [0 … 40,000]:'))
+# operator = input('One symbol among: "+", "-", "*", "/", "%":')
+
+# if operator == "+":
+#     result = N1 + N2
+#     if result % 2 == 0:
+#         print(f"{N1} {operator} {N2} = {result} - even")
+#     else:
+#         print(f"{N1} {operator} {N2} = {result} - odd")
+# elif operator == "-":
+#     result = N1 - N2
+#     if result % 2 == 0:
+#         print(f"{N1} {operator} {N2} = {result} - even")
+#     else:
+#         print(f"{N1} {operator} {N2} = {result} - odd")
+# elif operator == "*":
+#     result = N1 * N2
+#     if result % 2 == 0:
+#         print(f"{N1} {operator} {N2} = {result} - even")
+#     else:
+#         print(f"{N1} {operator} {N2} = {result} - odd")
+# elif operator == "/":
+#     if N2 == 0:
+#         print(f"Cannot divide {N1} by zero")
+#     else:
+#         result = N1 / N2
+#         print(f"{N1} / {N2} = {result:.2f}")
+# elif operator == "%":
+#     if N2 == 0:
+#         print(f"Cannot divide {N1} by zero")
+#     else:
+#         result = N1 % N2
+#         print(f"{N1} % {N2} = {result}")
+        
