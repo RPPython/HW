@@ -81,4 +81,23 @@
 #     print(f"The sides do not form a square. Perimeter: {perimeter}, Area: {area}.")
 
 # ============================= Task5 =======================
-# 
+# Many years ago there was a service - sending a luxury telegram.
+# Various occasions: birthday, name day, wedding, etc. 
+# The price was formed as follows:
+# price for letterhead (A) + price for text up to 20 words (B) + price for each word after the first 20 words (C)
+# The values ​​of A, B, C are integers from the interval [0.02..0.89].
+# To compile a program through which, based on the entered number of words, values ​​for A, B and C, the final price of a luxury telegram is calculated.
+# Example: A=0.2, B=0.5, 45 words, C=0.05 Output: 1.95
+
+# A = float(input("Enter the price for letterhead: "))
+# B = float(input("Enter the price for up to 20 words: "))
+# C = float(input("Enter the price for each word after the first 20 words: "))
+# num_words = int(input("Enter the number of words in the telegram: "))
+
+# if num_words <= 20:
+#     price = A + B
+# else:
+#     price = A + B + C * (num_words - 20)
+
+# print("The final price of the luxury telegram is: ", price)
+
