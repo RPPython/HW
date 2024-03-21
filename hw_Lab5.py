@@ -152,6 +152,44 @@
 # integers from the interval [5-100].
 # Example: 5, 12; 18.7 Output: fit
 
+# def check_fit(x1, y1, x2, y2):
+#     # Check if x1, y1 is smaller than x2, y2
+#     if x1 < x2 and y1 < y2:
+#         return "fit"
+#     else:
+#         return "not fit"
+
+# # Input data
+# input_str = input("Enter X1, Y1, X2, Y2 separated by commas (e.g., 5, 12, 18, 7): ")
+# x1, y1, x2, y2 = map(int, input_str.split(','))
+
+# # Check if one rectangle fits inside another
+# result = check_fit(x1, y1, x2, y2)
+# print("Output:", result)
+
+def check_fit(x1, y1, x2, y2):
+    
+    if x1 < x2 and y1 < y2:
+        return "fit"
+    else:
+        return "not fit"
+
+
+while True:
+    try:
+        input_str = input("Enter X1, Y1, X2, Y2 separated by commas (e.g., 5, 12, 18, 7): ")
+        x1, y1, x2, y2 = map(int, input_str.split(','))
+        break  
+    except ValueError:
+        print("Invalid input. Please enter integers separated by commas.")
+
+
+result = check_fit(x1, y1, x2, y2)
+print("Output:", result)
+
+
+
+
 
 
  
