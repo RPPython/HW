@@ -101,5 +101,18 @@
 
 # print("The final price of the luxury telegram is: ", price)
 
-# ============================= Task5 =======================
-# 
+# ============================= Task6 =======================
+# Leap years are all years in multiples of 4 with the exception of centuries, but without centuries multiples of 400, i.e. 1900 is not a leap, but 1600 and 2000 are leaps.
+# Write a program that, given an input year, checks whether it is a leap year
+# Input data: a year number in the range [0-9999].
+# Example: 2024 Output: 2024 is a leap
+
+year = int(input("Enter a yea: "))
+
+if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    print(f"{year}is a leap year.")
+else:
+    print(f"{year}is not a leap year.")
+
+
+
