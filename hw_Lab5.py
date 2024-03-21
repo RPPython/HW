@@ -107,12 +107,55 @@
 # Input data: a year number in the range [0-9999].
 # Example: 2024 Output: 2024 is a leap
 
-year = int(input("Enter a yea: "))
+# year = int(input("Enter a year: "))
 
-if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
-    print(f"{year}is a leap year.")
-else:
-    print(f"{year}is not a leap year.")
+# if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+#     print(f"{year} is a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+
+# ============================= Task7 =======================
+# Write a program to guess how cold/hot it is
+# the entered temperature in degrees Celsius. The temperature ranges are:
+# t <=-20 freezing cold;
+# t <=0 && t>-20 cold;
+# t <=15 && t>0 cool;
+# t <=25 && t>15 warm;
+# t >25 hot
+# Input data: t - an integer from the interval [-100..100].
+# Example: 12 Output: cool
+
+# def guess_temperature_category(temp):
+#     if temp <= -20:
+#         print("freezing cold") 
+#     elif temp <= 0:
+#         print("cold") 
+#     elif temp <= 15:
+#         print("cool") 
+#     elif temp <= 25:
+#         print("warm") 
+#     else:
+#         print("hot") 
+
+# def main():
+#     temp = int(input("Enter the temperature in degrees Celsius: "))
+#     category = guess_temperature_category(temp)
+#     print(f"The temperature {temp} degrees Celsius is {category}.")
+
+# if __name__ == "__main__":
+#     main()
+
+# ============================= Task7 =======================
+# Write a program to check if one is possible
+# rectangle to fit entirely inside another rectangle.
+# Input data: X1, Y1, X2, Y2 - the sides of the 2nd rectangle - 
+# integers from the interval [5-100].
+# Example: 5, 12; 18.7 Output: fit
+
+
+
+ 
+
 
 
 
