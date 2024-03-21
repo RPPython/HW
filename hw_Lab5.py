@@ -184,8 +184,8 @@
 #         print("Invalid input. Please enter integers separated by commas.")
 
 
-result = check_fit(x1, y1, x2, y2)
-print("Output:", result)
+# result = check_fit(x1, y1, x2, y2)
+# print("Output:", result)
 
 
 
