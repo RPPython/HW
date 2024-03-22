@@ -259,4 +259,42 @@
 
 
 # ================= Task 11 ================
-# 
+# Write a program that outputs all integers from the interval [1-
+# 50] that satisfy a check of the following condition:
+# c^3 = a^2 + b^2
+
+# Output:
+# Found result: 2^2 + 2^2 = 2^3
+# Found result: 2^2 + 11^2 = 5^3
+# Found result: 5^2 + 10^2 = 5^3
+# Found result: 9^2 + 46^2 = 13^3
+# Found result: 10^2 + 5^2 = 5^3
+# Found result: 10^2 + 30^2 = 10^3
+# Found result: 11^2 + 2^2 = 5^3
+# Found result: 16^2 + 16^2 = 8^3
+# Found result: 18^2 + 26^2 = 10^3
+# Found result: 26^2 + 18^2 = 10^3
+# Found result: 26^2 + 39^2 = 13^3
+# Found result: 30^2 + 10^2 = 10^3
+# Found result: 39^2 + 26^2 = 13^3
+# Found result: 46^2 + 9^2 = 13^3
+
+
+# for a in range(1, 51):
+#     for b in range(1, 51):
+#         for c in range(1, 51):
+#             if c**3 == a**2 + b**2:
+#                 print(f"Found result: {a}^{2} + {b}^{2} = {c}^{3}")
+
+# # checking for compliance with the condition that "a" and "b" must be different numbers:
+
+# for a in range(1, 51):
+#     for b in range(1, 51):
+#         if a != b:
+#             for c in range(1, 51):
+#                 if c**3 == a**2 + b**2:
+#                     print(f"Found result: {a}^{2} + {b}^{2} = {c}^{3}")
+
+
+
+
