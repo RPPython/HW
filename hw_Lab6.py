@@ -61,29 +61,71 @@
 # total_sum = calculate_sum(numbers)
 # print("Sum of the entered numbers:", total_sum)
 
-def calculate_sum(numbers):
-    total_sum = 0
-    for num in numbers:
-        total_sum += num
-    return total_sum
+# def calculate_sum(numbers):
+#     total_sum = 0
+#     for num in numbers:
+#         total_sum += num
+#     return total_sum
 
-# Input 5 numbers from the user
-numbers = [0, 0, 0, 0, 0]  # Initialize a list with 5 elements to store the numbers
-for i in range(5):
-    while True:
-        try:
-            num = int(input(f"Enter number {i + 1} (between 10 and 5555): "))
-            if num < 10 or num > 5555:
-                raise ValueError("Number must be in the range [10, 5555].")
-            else:
-                numbers[i] = num  # Store the number directly in the list at index i
-                break
-        except ValueError as e:
-            print(e)
+# # Input 5 numbers from the user
+# numbers = [0, 0, 0, 0, 0]  # Initialize a list with 5 elements to store the numbers
+# for i in range(5):
+#     while True:
+#         try:
+#             num = int(input(f"Enter number {i + 1} (between 10 and 5555): "))
+#             if num < 10 or num > 5555:
+#                 raise ValueError("Number must be in the range [10, 5555].")
+#             else:
+#                 numbers[i] = num  # Store the number directly in the list at index i
+#                 break
+#         except ValueError as e:
+#             print(e)
 
-# Calculate and print the sum of the entered numbers
-total_sum = calculate_sum(numbers)
-print("Sum of the entered numbers:", total_sum)
+# # Calculate and print the sum of the entered numbers
+# total_sum = calculate_sum(numbers)
+# print("Sum of the entered numbers:", total_sum)
+
+# ================= Task 3 ================
+# Write a program to create the following template:
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+
+# # Example with columns
+
+# def print_pattern(rows):
+#     for i in range(1, rows + 1):
+#         print("* " * i)
+#     for i in range(rows - 1, 0, -1):
+#         print("* " * i)
+
+# rows = 5  # Change this value to adjust the number of rows in the pattern
+# print_pattern(rows)
+
+# # Example with rows
+
+# def print_pattern(rows):
+#     for i in range(1, rows * 2):
+#         if i <= rows:
+#             for j in range(1, i + 1):
+#                 print("*", end=" ")
+#             print()
+#         else:
+#             for j in range(1, rows * 2 - i + 1):
+#                 print("*", end=" ")
+#             print()
+
+# rows = 5  # Change this value to adjust the number of rows in the pattern
+# print_pattern(rows)
+
+
+
 
 
 
