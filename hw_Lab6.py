@@ -318,3 +318,29 @@
 
 # num_rows = 9
 # numerical_triangle(num_rows)
+
+# ================= Task 13 ================
+# Write a program that outputs a square of numbers. The sums of
+# the elements of any row or column are equal to 45.
+# Example:
+# 1 2 3 4 5 6 7 8 9 0
+# 2 3 4 5 6 7 8 9 0 1
+# 3 4 5 6 7 8 9 0 1 2
+# 4 5 6 7 8 9 0 1 2 3
+# 5 6 7 8 9 0 1 2 3 4
+# 6 7 8 9 0 1 2 3 4 5
+# 7 8 9 0 1 2 3 4 5 6
+# 8 9 0 1 2 3 4 5 6 7
+# 9 0 1 2 3 4 5 6 7 8
+# 0 1 2 3 4 5 6 7 8 9
+
+# def print_square():
+#     n = 10 
+
+#     for i in range(n):
+#         for j in range(n):
+#             num = (i + j) % 10
+#             print(num, end=' ')
+#         print()  
+
+# print_square()
