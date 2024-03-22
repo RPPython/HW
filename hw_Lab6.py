@@ -125,7 +125,45 @@
 # print_pattern(rows)
 
 
+# ================= Task 4 ================
+#  Write a program to reverse the letters of a given word.
+# The word to be entered from the keyboard. By using a loop for this purpose.
+# Login:
+# Input a word to reverse: Hello
+# Output:
+# olleH
 
+# def reverse_word(word):
+#     reversed_word = ''
+#     for i in range(len(word) - 1, -1, -1):
+#         reversed_word += word[i]
+#     return reversed_word
 
+# input_word = input("Input a word to reverse: ")
+# reversed_word = reverse_word(input_word)
 
+# print("Output:")
+# print(reversed_word)
+
+# ================= Task 5 ================
+# Write a program to find the number of even and odd numbers
+# from a list of integers.
+# Login:
+# numbers = [1,2,3,4,5,6,7,8,9]
+# Output:
+# Number of even numbers: 4
+# Number of odd numbers: 5
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# even_count = 0
+# odd_count = 0
+
+# for num in numbers:
+#     if num % 2 == 0:
+#         even_count += 1
+#     else:
+#         odd_count += 1
+
+# print("Number of even numbers:", even_count)
+# print("Number of odd numbers:", odd_count)
 
