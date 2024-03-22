@@ -167,3 +167,96 @@
 # print("Number of even numbers:", even_count)
 # print("Number of odd numbers:", odd_count)
 
+
+# ================= Task 6 ================
+# Write a program that prints all the numbers from 0 to 6 without
+# includes 3 and 6.
+
+# for i in range(7):
+#     if i != 3 and i != 6:
+#         print(i)
+
+
+# ================= Task 7 ================
+# Write a program that prints the Fibunacci series between 0 and 50.
+# The Fibunacci sequence is: 0, 1, 1, 2, 3, 5, 8, 13, 21, … Each subsequent number is the sum of
+# the previous two.
+# Output: 1 1 2 3 5 8 13 21 34
+
+# a, b = 0, 1
+# while a < 50:
+#     print(a, end=' ')
+#     a, b = b, a + b
+
+
+# ================= Task 8 ================
+# . To print the letter A on the screen as given below:
+#  ***
+# *   * 
+# *   *
+# *****
+# *   *
+# *   *
+# *   *
+
+# print(' ''***'' ')
+# print('*''   ''*')
+# print('*''   ''*')
+# print('*****')
+# print('*''   ''*')
+# print('*''   ''*')
+# print('*''   ''*')
+
+
+# ================= Task 9 ================
+# Write a program that prints the following pattern:
+# 1
+# 22
+# 333
+# 4444
+# 55555
+# 666666
+# 7777777
+# 88888888
+# 999999999
+
+# for i in range(1, 10):
+#     print(str(i) * i)
+
+
+# ================= Task 10 ================
+# To compile a program that calculates the sum of products from 1 to
+# single digit number entered.
+# The sum is formed as follows:
+# 1*2 + 2*3*4 +..+n*(n+1)*(n+2)*..*2*n
+# Entrance: 4
+# Exit: 7106
+
+# number = int(input("Enter a single digit number: "))
+# result = 0
+
+
+# for i in range(1, number + 1):
+#     product = 1
+#     for sum_of_produc in range(i, 2*i + 1):
+#         product *= sum_of_produc
+#     result += product
+
+# print(result)
+
+# try:
+#     number = int(input("Enter a single digit number: "))
+# except ValueError:
+#     print("Invalid input. Please enter a single digit number.")
+# else:
+#     if number < 1 or number > 9:
+#         print("Please enter a single digit number.")
+#     else:
+#         sum_of_produc = calculate_sum_of_products
+#         print("The sum of products is:", sum_of_produc)
+
+# # # It's not ok :(
+
+
+# ================= Task 11 ================
+# 
