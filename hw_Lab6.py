@@ -344,3 +344,34 @@
 #         print()  
 
 # print_square()
+
+
+# ================= Task 14 ================
+# To write a Python program to generate a random number and yes
+# prompt the user to guess that number. To output the following values ​​too low, too
+# high, or exactly right, in case the user did or did not guess the number
+
+# import random
+
+# def guess_number():
+#     secret_number = random.randint(1, 100)
+
+#     while True:
+#         guess = int(input("Guess the number (between 1 and 100): "))
+#         if guess < secret_number:
+#             print("Too low! Try again.")
+#         elif guess > secret_number:
+#             print("Too high! Try again.")
+#         else:
+#             print(f"Congratulations! You guessed the number {secret_number} correctly!")
+#             break
+
+# if __name__ == "__main__":
+#     guess_number()
+
+
+# ================= Task 15 ================
+# 
+
+
+
