@@ -472,6 +472,154 @@
 # print_numbers_up_to_n(input_number)
 
 
+# ================= Task 18 ================
+# To write a program that accepts text as input and finds
+# the amount of characters in the text. Spaces are included and text must be in lowercase
+# letters. If there are no duplicates, print 0.
+# Login: Hello World! Login: foobar Login: birthday Login: helicopter
+# Output: 3 Output: 1 Output: 0 Output: 1
+
+# text = input("Pleas enter text: ").lower()
+# characters = list(text)
+# unique_characters = set(characters)
+
+# if len(characters) == len(unique_characters):
+#     print(0)
+# else:
+#     print(len(characters) - len(unique_characters))
+
+# # Pleas enter text: Hello world
+## 3
+    
+# # Pleas enter text: foobar
+## 1
+    
+# # Pleas enter text: birthday
+## 0
+    
+# # Pleas enter text: helicopter
+## 1
+
+
+# ================= Task 19 ================
+# To write a program that accepts text as input and reverses the letters from
+# right to left of only the words whose length is odd, those with an even number
+# they stay as they are.
+# Entry: Bananas Entry: One two three four
+# Exit: sananaB Exit: enO owt eerht four
+# Input: Make sure uoy only esrever sdrow of ddo length
+# Output: Make sure you only reverse words of odd length
+
+# def reverse_odd_words(sentence):
+#     words = sentence.split()
+#     result = []
+#     for word in words:
+#         if len(word) % 2 == 1:
+#             result.append(word[::-1])
+#         else:
+#             result.append(word)
+#     return ' '.join(result)
+
+# input_text = input("Enter a sentence: ")
+# output_text = reverse_odd_words(input_text)
+# print(output_text)
+
+
+# ================= Task 20 ================
+# Write a program to find the closest palindrome number to
+# an integer entered from the keyboard.
+# Entry: 887 Entry: 100 Entry: 888 Entry: 27
+# Output: 888 Output: 99 Output: 888 Output: 22
+
+# def is_palindrome(num):
+    
+#     return str(num) == str(num)[::-1] 
+#     # Convert the number to a string and check if it's equal to its reverse
+
+# def find_closest_palindrome(num):
+#     # Start searching from the input number
+#     lower_num = num - 1
+#     upper_num = num + 1
+
+#     while True:
+#         # Check if the lower number is a palindrome
+#         if is_palindrome(lower_num):
+#             return lower_num
+#         # Check if the upper number is a palindrome
+#         elif is_palindrome(upper_num):
+#             return upper_num
+
+#         # Move to the next lower and upper numbers
+#         lower_num -= 1
+#         upper_num += 1
+
+# try:
+#     num = int(input("Enter an integer: "))
+#     closest_palindrome = find_closest_palindrome(num)
+#     print(f"Closest palindrome number: {closest_palindrome}")
+# except ValueError:
+#     print("Invalid input. Please enter a valid integer.")
+
+
+# ================= Task 21 ================
+# Write a program to print the letter M
+
+# print("  *       *")
+# print("  *       *")
+# print("  * *   * *")
+# print("  *   *   *")
+# print("  *       *")
+# print("  *       *")
+# print("  *       *")
+
+
+# ================= Task 21 ================
+# Write a program to print the letter D
+
+# print(" **** " + " ")
+# print(" *" + (" ")*3 +" *")
+# print(" *" + (" ")*3 +" *")
+# print(" *" + (" ")*3 +" *")
+# print(" *" + (" ")*3 +" *")
+# print(" *" + (" ")*3 +" *")
+# print(" **** " + " ")
+
+
+# ================= Task 21 ================
+# Write a program that calculates N!/K! for given N and K (1<K<N). Without being
+# use built-in functions.
+# Input: N = 4, K = 3 Input: N = 3, K = 4 Input: N = 0, K = 0
+# Output: 4 Output: K must be less than N Output: Invalid input
+
+
+# def calculate_factorial(num):
+#     if num == 0:
+#         return 1
+#     factorial = 1
+#     for i in range(1, num + 1):
+#         factorial *= i
+#     return factorial
+
+# def calculate_ratio_of_factorials(n, k):
+#     if n < k:
+#         return "K must be less than N"
+#     elif n == 0 and k == 0:
+#         return "Invalid input"
+
+#     n_factorial = calculate_factorial(n)
+#     k_factorial = calculate_factorial(k)
+#     ratio = n_factorial // k_factorial  # Integer division to avoid float result
+#     return ratio
+
+# # Test
+# inputs = [(4, 3), (3, 4), (0, 0)]
+
+# for n, k in inputs:
+#     result = calculate_ratio_of_factorials(n, k)
+#     print(f"N = {n}, K = {k}, Result = {result}")
+
+
+
 
 
 
