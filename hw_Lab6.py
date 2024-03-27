@@ -445,6 +445,33 @@
 # print("Output:", output_text)
 
 
+# ================= Task 17 ================
+# To write a program that accepts from the keyboard an integer n and as
+# result to print all numbers up to the input.
+# Input: n = 4 Input: n = 11
+# Output: 1-2-3-4 Output: 1-2-3-4-5-6-7-8-9-1-0-1-1
+# Input: n = 15
+# Output: 1-2-3-4-5-6-7-8-9-1-0-1-1-1-2-1-3-1-4-1-5
+
+# def print_numbers_up_to_n(n):
+#     for i in range(1, n + 1):
+#         print(i, end='-')
+#     print()  
+
+# while True:
+#     try:
+#         input_number = int(input("Enter an integer (n): "))
+#         if input_number > 0:
+#             break
+#         else:
+#             print("Please enter a positive integer.")
+#     except ValueError:
+#         print("Invalid input. Please enter an integer.")
+
+# print("Output:", end=' ')
+# print_numbers_up_to_n(input_number)
+
+
 
 
 
