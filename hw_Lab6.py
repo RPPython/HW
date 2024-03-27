@@ -371,7 +371,82 @@
 
 
 # ================= Task 15 ================
-# 
+# To write a program that prompts the user to enter a number and
+# the program to check whether it is simple or not.
+# Login:
+# Please enter a number
+# >>> 12
+# Output:
+# The number is not prime.
+
+# def is_prime(number):
+#     if number <= 1:
+#         return False
+#     for divisor in range(2, int(number**0.5) + 1):
+#         if number % divisor == 0:
+#             return False
+#     return True
+
+# def main():
+#     try:
+#         user_input = int(input("Please enter a number: "))
+#         if is_prime(user_input):
+#             print("The number is prime.")
+#         else:
+#             print("The number is not prime.")
+#     except ValueError:
+#         print("Invalid input! Please enter a valid integer.")
+
+# if __name__ == "__main__":
+#     main()
+
+# ================= Task 16 ================
+# To create a program to enter text from the keyboard and yes
+# removes repeated letters in text.
+# Input: aaabbbccc
+# Output: abc
+
+# def remove_repeated_letters(text):
+#     result = ''
+#     prev_char = ''
+#     for char in text:
+#         if char != prev_char:
+#             result += char
+#             prev_char = char
+#     return result
+
+# input_text = input("Enter text: ")
+# output_text = remove_repeated_letters(input_text)
+
+# print("Output:", output_text)
+
+# # If we need to secure the code from potential errors:
+
+# def remove_repeated_letters(text):
+#     result = ''
+#     prev_char = ''
+#     for char in text:
+#         if char.isalpha():
+#             if char != prev_char:
+#                 result += char
+#                 prev_char = char
+#         else:
+#             print(f"Ignoring non-alphabetic character: '{char}'")
+#     return result
+
+# while True:
+#     input_text = input("Enter text: ")
+#     if input_text.strip():  # Check if input is not empty after stripping whitespace
+#         break
+#     else:
+#         print("Please enter a non-empty text.")
+
+# output_text = remove_repeated_letters(input_text)
+# print("Output:", output_text)
+
+
+
+
 
 
 
