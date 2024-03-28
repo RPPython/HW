@@ -619,6 +619,104 @@
 #     print(f"N = {n}, K = {k}, Result = {result}")
 
 
+# ================= Task 22 ================
+# Write a program that calculates N!*K!/(N-K)! for given N and K (1<K<N).
+# Without using built-in functions.
+# Input: N = 4, K = 3 Input: N = 3, K = 4 Input: N = 0, K = 0
+# Output: 144 Output: K must be less than N Output: Invalid input
+
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     result = 1
+#     for i in range(1, n+1):
+#         result *= i
+#     return result
+
+# def calculate_factorials(N, K):
+#     if K >= N:
+#         return "K must be less than N" 
+#     if N <= 0 or K <= 0:
+#         return "Invalid input"
+
+#     N_factorial = factorial(N)
+#     K_factorial = factorial(K)
+#     NK_factorial = factorial(N-K)
+
+#     result = (N_factorial * K_factorial) // NK_factorial
+#     return result
+
+# # Test
+# print(calculate_factorials(4, 3))  # Output: 144
+# print(calculate_factorials(3, 4))  # Output: K must be less than N
+# print(calculate_factorials(0, 0))  # Output: K must be less than N ????
+
+
+# ================= Task 23 ================
+# Write a program that, for a given integer n, calculates the sum:
+# Input: n = 2, x = 1 Input: n = 10, x = 2 Input: n = 0, x = 1
+# Output: 4.0 Output: 4468.625 Output: 1
+# Input: n = 0, x = 0
+# Output: Error, not divisible by zero
+
+# def calculate_sum(n, x):
+#     if n == 0 and x == 0:
+#         print("Error, not divisible by zero")
+#     elif n == 0:
+#         print(x)
+#     else:
+#         result = 0
+#         for i in range(1, n + 1):
+#             result += (i * x) / (i + n)
+#         print(result)
+
+# ### Test
+# calculate_sum(2, 1)   # Output: 0.8333333333333333
+# calculate_sum(10, 2)  # Output: 6.62457193649144
+# calculate_sum(0, 1)   # Output: 1
+# calculate_sum(0, 0)   # Output: Error, not divisible by zero
+
+
+# ================= Task 24 ================
+# Write a program that reads from the console a positive integer N (N < 20) and prints a matrix of numbers like the figure below:
+# 	N = 3
+
+# |1|2|3|
+# |2|3|4|
+# |3|4|5|
+       
+	
+# 	N = 4
+
+# 1	2 3	4
+# 2	3 4	5
+# 3	4 5	6
+# 4	5 6	7
+
+# def print_matrix(N):
+#     if N >= 20:
+#         print("N must be less than 20")
+#         return
+    
+#     for i in range(1, N + 1):
+#         row = ''
+#         for j in range(i, i + N):
+#             row += str(j) + '|'
+#         print(row)
+
+# try:
+#     N = int(input("Enter a positive integer N (N < 20): "))
+#     if N <= 0:
+#         raise ValueError
+# except ValueError:
+#     print("Invalid input. Please enter a positive integer.")
+# else:
+#     print_matrix(N)
+    
+
+
+
 
 
 
