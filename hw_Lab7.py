@@ -51,9 +51,10 @@
 # print("Original list: ", values)
 # print("Modified list: ", new_values)
 
-# This program it's not corect
+# This program it's not correct
 
 ### New
+
 # def remove_extreme_values(numbers):
 #     if len(numbers) < 4:
 #         raise ValueError("Error: You must enter at least 4 values.")
@@ -82,5 +83,81 @@
 
 # if __name__ == "__main__":
 #     main()
+
+
+
+# ================= Task 3 ================
+# To create a program that reads words as input from the keyboard while
+# the user did not enter a blank line. After the user enters a blank line,
+# the program must output each word entered by the user exactly once.
+# Words must appear in the same order in which they were entered.
+ 
+# For example, if user entered:
+
+# first
+# second
+# first
+# third
+# second
+
+# then the program should only print:
+# first
+# second
+# third
+
+
+# words = []
+
+# while True:
+#     word = input("Enter a word (or press Enter to stop): ")
+#     if word == "":
+#         break
+#     words.append(word)
+
+# unique_words = []
+# for word in words:
+#     if word not in unique_words:
+#         unique_words.append(word)
+
+# for word in unique_words:
+#     print(word)
+
+
+# ================= Task 4 ================
+# To create a program that reads integers entered by the user,
+# until an empty line is entered. After all the numbers have been read, the program
+# should display all negative numbers followed by zeros followed by alls
+# positive numbers. In each group, the numbers must appear in the same order, c
+# which are entered by the user. 
+# For example, if the user enters the values 
+# 3, -4, 1, 0, -1, 0, and -2, 
+# your program should output the values -4, -1, -2, 0, 0, 3, and 1 .
+# Your program should display each value on a new line.
+
+
+# negatives = []
+# zeros = []
+# positives = []
+
+# while True:
+#     num = input("Enter a number (or press Enter to stop): ")
+#     if num == "":
+#         break
+
+# try:
+#     num = int(num)
+#     if num < 0:
+#         negatives.append(num)
+#     elif num == 0:
+#         zeros.append(num)
+#     else:
+#         positives.append(num)
+# except ValueError:
+#     print("Please enter a valid integer.")
+
+# for num in (negatives + zeros + positives):
+#     print(num)
+
+
 
 
