@@ -35,18 +35,52 @@
 # error if user enters less than 4 values.
 
 
-def remove_extreme_values(values):
-    if len(values) < 4:
-        print("Error: Please enter at least 4 values.")
-    else:
-        sorted_values = sorted(values)
-        new_values = sorted_values[2:-2]
-        return new_values
+# def remove_extreme_values(values):
+#     if len(values) < 4:
+#         print("Error: Please enter at least 4 values.")
+#     else:
+#         sorted_values = sorted(values)
+#         new_values = sorted_values[2:-2] # Remove the two largest and two smallest values
+#         return new_values
 
-values = input("Enter a list of numbers separated by space: ").split()
-values = [int(x) for x in values]
+# values = input("Enter a list of numbers separated by space: ").split()
+# values = [int(x) for x in values]
 
-new_values = remove_extreme_values(values)
+# new_values = remove_extreme_values(values)
 
-print("Original list: ", values)
-print("Modified list: ", new_values)
+# print("Original list: ", values)
+# print("Modified list: ", new_values)
+
+# This program it's not corect
+
+### New
+# def remove_extreme_values(numbers):
+#     if len(numbers) < 4:
+#         raise ValueError("Error: You must enter at least 4 values.")
+
+#     sorted_numbers = sorted(numbers)
+#     new_list = sorted_numbers[2:-2]  # Remove the two largest and two smallest values
+#     return new_list
+
+# def main():
+#     try:
+#         num_values = int(input("Enter the number of values you want to input: "))
+#         user_values = []
+        
+#         for i in range(num_values):
+#             value = float(input(f"Enter value {i + 1}: "))
+#             user_values.append(value)
+        
+#         new_list = remove_extreme_values(user_values)
+        
+#         print("\nOriginal list:")
+#         print(user_values)
+#         print("\nNew list with extreme values removed:")
+#         print(new_list)
+#     except ValueError as e:
+#         print(e)
+
+# if __name__ == "__main__":
+#     main()
+
+
