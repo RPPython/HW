@@ -158,6 +158,142 @@
 # for num in (negatives + zeros + positives):
 #     print(num)
 
+### There is something in the program that is not written correctly:(
+
+
+# ================= Task 5 ================
+# To win the biggest prize in a particular lottery, one must
+# match all 6 numbers on your ticket with the 6 numbers between 1 and 49 drawn from
+# the organizer of the lottery. Write a program that generates a random selection of 6
+# lottery ticket numbers. Make sure the 6 numbers selected are not repeated. Show
+# numbers in ascending order.
+
+## Option 1
+
+# import random
+
+## Generate 6 unique random numbers between 1 and 49
+## Sort the numbers in ascending order
+
+# lottery_numbers = random.sample(range(1, 50), 6)
+# lottery_numbers.sort()
+
+## Generate and display the lottery numbers
+
+# print("The lottery ticket numbers selected are:")
+# for number in lottery_numbers:
+# print(number)
+
+## Option 2 with loop
+
+# import random
+
+# def generate_lottery_numbers():
+#     lottery_numbers = []
+    
+#     # Generate 6 unique random numbers between 1 and 49
+
+#     while len(lottery_numbers) < 6:
+#         number = random.randint(1, 49)
+#         if number not in lottery_numbers:
+#             lottery_numbers.append(number)
+    
+#     # Sort the numbers in ascending order
+            
+#     lottery_numbers.sort()
+    
+#     return lottery_numbers
+
+# # Generate and display the lottery numbers
+
+# lottery_numbers = generate_lottery_numbers()
+# print("Lottery Ticket Numbers (in ascending order):", lottery_numbers)
+
+
+# ================= Task 6 ================
+# To write a program that generates all sublists of a given list.                                                   
+# For example, the lists of [1, 2, 3] 
+# are [], [1], [2], [3], [1, 2], [2, 3], [1, 3] and [1, 2, 3].
+
+# def generate_sublists(lst):
+#     sublists = []
+#     n = len(lst)
+
+#     for i in range(2**n):
+#         sub = []
+#         for j in range(n):
+#             if (i >> j) % 2 == 1:
+#                 sub.append(lst[j])
+#         sublists.append(sub)
+
+#     return sublists
+
+# # Example
+
+# lst = [8, 16, 81, 30]
+# result = generate_sublists(lst)
+
+# for sublist in result:
+#     print(sublist)
+
+## Otput
+# []
+# [8]
+# [16]
+# [8, 16]
+# [81]
+# [8, 81]
+# [16, 81]
+# [8, 16, 81]
+# [30]
+# [8, 30]
+# [16, 30]
+# [8, 16, 30]
+# [81, 30]
+# [8, 81, 30]
+# [16, 81, 30]
+# [8, 16, 81, 30]
+
+
+# ================= Task 7 ================
+# Write a program that finds the maximum number of consecutive
+# identical items in a list.
+# Example: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} -> {2, 2, 2}. '2' * counter
+
+def max_consecutive_elements(lst):
+    current_element = None 
+    current_count = 0
+    max_element = None
+    max_count = 0
+
+    for element in lst:
+        if element == current_element:
+            current_count += 1
+        else:
+            current_element = element
+            current_count = 1
+
+        if current_count > max_count:
+            max_count = current_count
+            max_element = element
+
+    if max_element is not None:
+        max_sequence = [max_element] * max_count
+        return max_sequence
+    else:
+        return None
+
+# Example usage
+lst = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1]
+result = max_consecutive_elements(lst)
+print(result)
+
+
+
+
+
+
+
 
 
 
