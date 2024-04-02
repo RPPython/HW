@@ -260,36 +260,63 @@
 # identical items in a list.
 # Example: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} -> {2, 2, 2}. '2' * counter
 
-def max_consecutive_elements(lst):
-    current_element = None 
-    current_count = 0
-    max_element = None
-    max_count = 0
+# def max_consecutive_elements(lst):
+#     current_element = None 
+#     current_count = 0
+#     max_element = None
+#     max_count = 0
 
-    for element in lst:
-        if element == current_element:
-            current_count += 1
-        else:
-            current_element = element
-            current_count = 1
+#     for element in lst:
+#         if element == current_element:
+#             current_count += 1
+#         else:
+#             current_element = element
+#             current_count = 1
 
-        if current_count > max_count:
-            max_count = current_count
-            max_element = element
+#         if current_count > max_count:
+#             max_count = current_count
+#             max_element = element
 
-    if max_element is not None:
-        max_sequence = [max_element] * max_count
-        return max_sequence
-    else:
-        return None
+#     if max_element is not None:
+#         max_sequence = [max_element] * max_count
+#         return max_sequence
+#     else:
+#         return None
 
-# Example usage
-lst = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1]
-result = max_consecutive_elements(lst)
-print(result)
+# # Example usage
+# lst = [2, 1, 1, 2, 3, 3, 2, 2, 2, 1]
+# result = max_consecutive_elements(lst)
+# print(result)
 
 
+# ================= Task 8 ================
+# Write a program that finds the maximum number of consecutive
+# increasing items in a list.
+# Example: {3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.
 
+# def find_max_increasing_subsequence(lst): 
+#     current_seq = [lst[0]] 
+#     max_seq = []
+#     for i in range(1, len(lst)):
+#         if lst[i] >= lst[i-1]:
+#             current_seq.append(lst[i])
+#         else:
+#             if len(current_seq) > len(max_seq):
+#                 max_seq = current_seq
+#             current_seq = [lst[i]]
+
+#     if len(current_seq) > len(max_seq):
+#         max_seq = current_seq
+
+#     return max_seq
+
+# ## Example
+# lst = [3, 2, 3, 4, 2, 2, 4] 
+# print(find_max_increasing_subsequence(lst))
+
+
+# ================= Task 9 ================
+# 
 
 
 
