@@ -159,6 +159,7 @@
 #     print(num)
 
 ### There is something in the program that is not written correctly:(
+    ### To discuss with the teacher ###
 
 
 # ================= Task 5 ================
@@ -311,14 +312,54 @@
 #     return max_seq
 
 # ## Example
+
 # lst = [3, 2, 3, 4, 2, 2, 4] 
 # print(find_max_increasing_subsequence(lst))
 
 
 # ================= Task 9 ================
-# 
+# Write a program that creates the following square matrices and them
+# outputs to the console in formatted form. The size of the matrices is introduced by
+# the console. Example for (4,4):
+# a)| 1 | 5 | 9 | 13 |    b) | 1 | 5 | 9 | 16 | 
+#   | 2 | 6 | 10| 14 |       | 2 | 6 | 10| 15 |
+#   | 3 | 7 | 11| 15 |       | 3 | 7 | 11| 14 |
+#   | 4 | 8 | 12| 16 |       | 4 | 8 | 12| 13 |
 
+# size = int(input("Enter the size of the square matrix: "))
 
+# # Create matrix a
+# matrix_a = [[0] * size for _ in range(size)]
+# num = 1
+# for i in range(size):
+#     for j in range(size):
+#         matrix_a[j][i] = num
+#         num += 1
+
+# # Create matrix b
+# matrix_b = [[0] * size for _ in range(size)] 
+# num = 1
+# for i in range(size-1, -1, -1):
+#     for j in range(size):
+#         matrix_b[j][i] = num
+#         num += 1 
+
+# # Output matrices
+# print("Matrix a:")
+# for row in matrix_a:
+#     print("", end="")
+#     for value in row:
+#         print(f" {value} |", end="")
+#     print("")
+
+# print("\nMatrix b:")
+# for row in matrix_b:
+#     print("", end="")
+#     for value in row:
+#         print(f" {value} |", end="")
+#     print("")   
+
+    ### To discuss with the teacher ###
 
 
 
