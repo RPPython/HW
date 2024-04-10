@@ -279,3 +279,30 @@
 #     print(difference)
 # else:
 #     print("{}")
+
+
+# ================= Task 6 ================
+# To write a program to implement an interpretive dictionary. The program yes
+# can search by word entered, such as if the dictionary is French-English, it
+# the dictionary to be able to provide for an entered English word, its corresponding equivalent
+# in French. If the English word occurs in the dictionary several times, then the result is yes
+# be recorded in a list which will then be printed. If the word does not exist yes
+# an empty list is displayed.
+
+# dictionary = {
+#     "hello": ["bonjour"],
+#     "world": ["monde"],
+#     "cat": ["chat", "chatte"],
+#     "dog": ["chien"],
+#     "house": ["maison"]
+# }
+
+# while True:
+#     search_term = input("Enter a word to search (type 'exit' to quit): ")
+#     if search_term.lower() == "exit":
+#         break
+#     translations = dictionary.get(search_term, [])
+#     if translations:
+#         print(f"Translations of '{search_term}': {translations}")
+#     else:
+#         print(f"No translations found for '{search_term}'.")
