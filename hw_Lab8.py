@@ -218,4 +218,64 @@
 #           print("Sorry, we are fresh out of that today.")
 
 # ================= Task 4 ================
-# 
+# To write a program to track rainfall in a number of cities.
+# The user can enter the name of a city; if the city name is empty,
+# the program exits and prints a report. If the city name is not empty, the user
+# will need to enter information on the amount of rain for the particular
+# city (usually measured in millimeters). After entering the amount of rain,
+# user has option to enter next city and amount of rain and that
+# will do so until he presses "Enter" instead of typing the city name.
+# Example:
+# Boston
+# 5
+# New York
+# 7
+# Boston
+# 5
+# [Enter; blank line]
+# Output:
+# Boston: 10
+# New York: 7
+
+# cities = {}
+# while True:
+#     city = input("Enter city name: ")
+#     if city == "":
+#         break
+#     else:
+#         rain = int(input("Enter rainfall amount for {} in mm: ".format(city)))
+#         cities[city] = cities.get(city, 0) + rain
+
+# for city, total_rainfall in cities.items():
+#     print("{}: {}".format(city, total_rainfall))
+
+
+# ================= Task 5 ================
+# To write a program to find the difference between two dictionaries.
+# As a result, the program generates a new dictionary to contain the difference
+# between the two dictionaries. If there is no difference between the dictionaries, print blank
+# dictionary. For each key-value pair that differs, keep them
+# the distinct values in a list, and the list to be stored in a dictionary, as
+# key to match the current one. If any of the dictionaries do not contain the given one
+# key, then in the list, it should be written as None.
+# Login: Login: Login:
+# d1 = {'a':1, 'b':2, 'c':3} d3 = {'a':1, 'b':2, 'd':3} d1 = {'a':1 , 'b':2, 'c':3}
+# d2 = {'a':1, 'b':2, 'c':4} d4 = {'a':1, 'b':2, 'c':4} d5 = {'a':1 , 'b':2, 'd':4}
+# Exit: Exit: Exit:
+# {'c': [3, 4]} {'c': [None, 4], 'd': [3, None]} {'c': [3, None], 'd': [None, 4]}
+# Input: d1 = {'a':1, 'b':2, 'c':3} and d1 = {'a':1, 'b':2, 'c':3}
+# Output: {}
+
+# d1 = {'a':1, 'b':2, 'c':3}
+# d2 = {'a':1, 'b':2, 'c':4}
+
+# difference = {}
+
+# for key in d1.keys() | d2.keys():
+#     if d1.get(key) != d2.get(key):
+#         difference[key] = [d1.get(key), d2.get(key)]
+
+# if difference:
+#     print(difference)
+# else:
+#     print("{}")
