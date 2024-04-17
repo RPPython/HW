@@ -282,8 +282,8 @@
 
 
 # ================= Task 6 ================
-# To write a program to implement an interpretive dictionary. The program yes
-# can search by word entered, such as if the dictionary is French-English, it
+# To write a program to implement an interpretive dictionary. The program should
+# search by word entered, such as if the dictionary is French-English, it
 # the dictionary to be able to provide for an entered English word, its corresponding equivalent
 # in French. If the English word occurs in the dictionary several times, then the result is yes
 # be recorded in a list which will then be printed. If the word does not exist yes
@@ -306,3 +306,65 @@
 #         print(f"Translations of '{search_term}': {translations}")
 #     else:
 #         print(f"No translations found for '{search_term}'.")
+
+# ================= Task 7 ================
+# To write a program to simulate 1000 rolls of two dice (from 6
+# numbers). The program should contain two dictionaries, 
+# one with the expected probabilities, a
+# the other will keep the number of numbers that have fallen.
+
+
+# import random
+
+# # Initialize the variables
+
+# results = {i: 0 for i in range(2, 13)}
+# expected_probabilities = {i: 0 for i in range(2, 13)}
+
+# # Simulate 1000 rools
+
+# for _ in range(1000):
+#     dice1 = random.randint(1, 6)
+#     dice2 = random.randint(1, 6)
+#     total = dice1 + dice2
+#     results[total] += 1
+
+# # Calculate the results in percentages
+
+# print("Total   Simulated    Expected\n        percent      percent")
+# total_rolls = 1000
+# for key, value in sorted(results.items()):
+#     simulated_percent = (results[key] / total_rolls) * 100
+#     expected_percent = (expected_probabilities[key] * total_rolls) * 100
+#     print(f"{key}        {simulated_percent:.2f}        {expected_percent:.2f}")
+
+
+
+# ================= Task 8 ================
+# Write a program that determines and displays the number of unique characters in
+# string entered by the user. For example, "Hello World!" has 13 unique characters
+# while “zzz” has only one unique character. Use a dictionary to solve this one
+# issue.
+
+# # Initialize an empty dictionary to store the count of each character
+# char_count = {}
+
+# # Get input from the user
+# user_input = input("Enter a string: ")
+
+# # Iterate through each character in the input string
+# for char in user_input:
+#     # Increment the count for the current character or set it to 1 if it's the first occurrence
+#     char_count[char] = char_count.get(char, 0) + 1
+
+# # Count the number of unique characters by finding the length of the dictionary
+# unique_count = len(char_count)
+
+# # Display the result
+# print(f"The number of unique characters in '{user_input}' is: {unique_count}")
+
+
+
+
+
+ 
