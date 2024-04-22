@@ -58,11 +58,21 @@ Create an instance of the 'Car' class with information about a car and demonstra
 """
 
 # YOUR CODE HERE (Define the Car class)
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
 
-# TEST
+#     def start_engine(self):
+#         print(f"Engine stardet for {self.make} {self.model} {self.year}") 
+#     def stop_engine(self):
+#         print(f"Engine stopped for {self.make} {self.model} {self.year}") 
+# # TEST
 # car1 = Car("Toyota", "Camry", 2022)
 # car1.start_engine()
 # car1.stop_engine()
+ 
 
 # EXPECTED OUTPUT:
 # Engine started for Toyota Camry 2022
@@ -88,9 +98,25 @@ Create an instance of the 'Student' class with your own information and demonstr
 """
 
 # YOUR CODE HERE (Define the Student class)
+# class Student:
+#     def __init__(self, name, student_id):
+#         self.name = name
+#         self.student_id = student_id
+#         self.courses = []
+
+#     def add_course(self, course_name):
+#         self.courses.append(course_name)
+#     def remove_course(self, course_name):
+#         if course_name in self.courses:
+#             self.courses.remove(course_name)
+#     def list_courses(self):
+#         if self.courses:
+#             courses_str = " , ".join(self.courses)
+#             print(f"Courses: {courses_str}")
 
 
-# TEST
+
+# # TEST
 # student1 = Student("Alice", 12345)
 # student1.add_course("Math")
 # student1.add_course("History")
@@ -112,8 +138,54 @@ display information about a book, and delete a book from the library.
 
 ### YOUR CODE HERE (Define the Library and Book classes)
 
+# class Book:
+#     def __init__(self, title, author, publisher, year,isbn):
+#         self.title = title
+#         self.author = author
+#         self.publisher = publisher
+#         self.year = year
+#         self.isbn = isbn
+#     def display_info(self):
+#         print(f"{self.title}, {self.author}, {self.publisher}, {self.year}, 'ISBN: {self.isbn}")
 
-### TEST:
+
+
+# class Library:
+#     def __init__(self, library):
+#         self.library_name = library
+#         self.list_of_book = []
+
+#     def add_book(self, book_name):
+#         self.list_of_book.append(book_name)
+
+#     def find_books_by_author(self, author):
+#         found_books = [book.title for book in self.list_of_book if book.author == author]
+#         return found_books 
+    
+#     def display_book_info(self, isbn):
+#         found_book = None
+#         for book in self.list_of_book:
+#             if book.isbn == isbn:
+#                 found_book = book
+#                 break
+#         if found_book:
+#             found_book.display_info()
+#         else:
+#             print(f"Book ISBN{isbn} not found.")
+
+#     def remove_book(self, isbn):
+#         for book in self.list_of_book:
+#             if book.isbn == isbn:
+#                 self.list_of_book.remove(book)
+#                 print(f"Book ISBN{isbn} delited.")
+#                 return
+        
+#     print(f"Book ISBN(isbn) not found.")
+
+
+
+
+# ### TEST:
 # library = Library("City Library")
 # book1 = Book("Book One", "Author A", "Publisher X", 2020, "ISBN12345")
 # book2 = Book("Book Two", "Author B", "Publisher Y", 2021, "ISBN67890")
