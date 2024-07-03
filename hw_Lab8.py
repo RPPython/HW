@@ -341,27 +341,37 @@
 
 
 # ================= Task 8 ================
-# Write a program that determines and displays the number of unique characters in
-# string entered by the user. For example, "Hello World!" has 13 unique characters
-# while “zzz” has only one unique character. Use a dictionary to solve this one
-# issue.
+""" Write a program that determines and displays the number of unique characters in
+string entered by the user. For example, "Hello World!" has 13 unique characters
+while “zzz” has only one unique character. Use a dictionary to solve this one
+issue"""
 
-# # Initialize an empty dictionary to store the count of each character
-# char_count = {}
+#Initialize an empty dictionary to store the count of each character
 
-# # Get input from the user
-# user_input = input("Enter a string: ")
+char_count = {}
 
-# # Iterate through each character in the input string
-# for char in user_input:
-#     # Increment the count for the current character or set it to 1 if it's the first occurrence
-#     char_count[char] = char_count.get(char, 0) + 1
+#Get input from the user
+
+user_input = input("Enter a string: ")
+
+#Iterate through each character in the input string
+
+for char in user_input:
+
+#Increment the count for the current character or 
+#set it to 1 if it's the first occurrence
+
+char_count[char] = char_count.get(char, 0) + 1
 
 # # Count the number of unique characters by finding the length of the dictionary
-# unique_count = len(char_count)
 
-# # Display the result
-# print(f"The number of unique characters in '{user_input}' is: {unique_count}")
+unique_count = len(char_count)
+
+#Display the result
+
+print(f"The number of unique characters in '{user_input}' is: {unique_count}")
+
+
 
 
 
